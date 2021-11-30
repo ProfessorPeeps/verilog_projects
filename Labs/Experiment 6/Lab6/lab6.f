@@ -1,0 +1,1 @@
+vcs -debug -full64 MUX2_1.v fullAdder.v Carry_Sel_Adder_2bit.v Carry_Sel_Adder.v  tb_6bit_exhaustive.v

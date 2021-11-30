@@ -1,0 +1,25 @@
+Chronologic VCS simulator copyright 1991-2017
+Contains Synopsys proprietary information.
+Compiler version N-2017.12-SP2-2_Full64; Runtime version N-2017.12-SP2-2_Full64;  Mar 14 14:07 2019
+
+ 		  Initial Conditions: 
+                   0  MUX1 = xxxxxx  MUX2 = xxxxx  MUX3 = xxxx  MUX4 = x
+
+		  SEL = 0: 
+                  10  A = 101010  B = 011110  SEL = 0
+                  10  MUX1 = 011110  MUX2 = 11110  MUX3 = 1110  MUX4 = 0
+
+		  SEL = 1: 
+                  20  A = 101010  B = 011110  SEL = 1
+                  20  MUX1 = 101010  MUX2 = 01010  MUX3 = 1010  MUX4 = 0
+
+		  SEL = X: 
+                  30  A = 101010  B = 011110  SEL = x
+                  30  MUX1 = xx1x10  MUX2 = x1x10  MUX3 = 1x10  MUX4 = 0
+
+$finish called from file "tb_scale_mux.v", line 69.
+$finish at simulation time                   40
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 40 ns
+CPU Time:      0.200 seconds;       Data structure size:   0.0Mb
+Thu Mar 14 14:07:02 2019

@@ -1,0 +1,1 @@
+vcs -debug -full64 -sverilog 

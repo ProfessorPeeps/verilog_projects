@@ -1,0 +1,14 @@
+rc file Version 1.0
+
+[Design]
+COMPILE_PATH=/home/users15/jms2299/ECE/ECE526L/Experiment 7/Lab7
+SystemC=FALSE
+UUM=FALSE
+KDB=FALSE
+USE_NOVAS_HOME=FALSE
+COSIM=FALSE
+TOP=tb_rom tb_register 
+
+[Value]
+WREALX=ffff534e50535f58
+WREALZ=ffff534e50535f5a

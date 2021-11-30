@@ -1,0 +1,1 @@
+vcs -debug -full64 -sverilog RAM.sv ROM.sv tb_rom.sv tb_register.sv

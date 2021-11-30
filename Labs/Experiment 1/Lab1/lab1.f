@@ -1,0 +1,1 @@
+vcs -debug -full64 MUX2_1.v tb_MUX2_1.v

@@ -1,0 +1,1 @@
+vcs -debug -full64 -sverilog phaser.sv tb_phaser.sv AASD.sv 

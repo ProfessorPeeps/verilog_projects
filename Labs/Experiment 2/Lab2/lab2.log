@@ -1,0 +1,49 @@
+Chronologic VCS simulator copyright 1991-2017
+Contains Synopsys proprietary information.
+Compiler version N-2017.12-SP2-2_Full64; Runtime version N-2017.12-SP2-2_Full64;  Feb 21 17:04 2019
+VCD+ Writer N-2017.12-SP2-2_Full64 Copyright (c) 1991-2017 by Synopsys Inc.
+
+Test for reset (Load 0):
+                   0  J = 0  K = 0  SD = 1  RD = 1  CP = 0
+                   0  Q = x  Q_BAR = x
+                  20  J = 0  K = 1  SD = 1  RD = 1  CP = 1
+                  31  Q = x  Q_BAR = 1
+                  38  Q = 0  Q_BAR = 1
+
+Test for asynch. set:
+                 100  J = 0  K = 1  SD = 0  RD = 1  CP = 1
+                 107  Q = 1  Q_BAR = 1
+                 120  Q = 1  Q_BAR = 0
+
+Test for asynch. reset:
+                 180  J = 0  K = 1  SD = 1  RD = 0  CP = 1
+                 187  Q = 1  Q_BAR = 1
+                 193  Q = 0  Q_BAR = 1
+
+Test for hold :
+                 260  J = 1  K = 1  SD = 1  RD = 1  CP = 1
+                 300  Q = 0  Q_BAR = 1
+
+Test for set (Load 1):
+                 340  J = 1  K = 0  SD = 1  RD = 1  CP = 1
+                 352  Q = 1  Q_BAR = 1
+                 359  Q = 1  Q_BAR = 0
+
+Test for toggle :
+                 420  J = 1  K = 1  SD = 1  RD = 1  CP = 1
+                 431  Q = 1  Q_BAR = 1
+                 438  Q = 0  Q_BAR = 1
+
+Test for indeterminate (Test 1) :
+                 500  J = 0  K = 1  SD = 0  RD = 0  CP = 1
+                 507  Q = 1  Q_BAR = 1
+
+Test for indeterminate (Test 2) :
+                 620  J = 1  K = 1  SD = 0  RD = 0  CP = 1
+                 700  Q = 1  Q_BAR = 1
+$finish called from file "tb_JK_FF.v", line 84.
+$finish at simulation time                72000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 720000 ps
+CPU Time:      0.220 seconds;       Data structure size:   0.0Mb
+Thu Feb 21 17:04:21 2019

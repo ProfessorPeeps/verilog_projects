@@ -1,0 +1,60 @@
+Chronologic VCS simulator copyright 1991-2017
+Contains Synopsys proprietary information.
+Compiler version N-2017.12-SP2-2_Full64; Runtime version N-2017.12-SP2-2_Full64;  Apr  4 17:20 2019
+VCD+ Writer N-2017.12-SP2-2_Full64 Copyright (c) 1991-2017 by Synopsys Inc.
+
+                   0 C6 = x  SUM = xxxxxx
+
+		  Test for default: 
+                  20 A = 000000  B = 000000  C0 = 0
+                  23 C6 = x  SUM = xxxxx0
+                  25 C6 = x  SUM = xxxx00
+                  26 C6 = 0  SUM = xxxx00
+                  27 C6 = 0  SUM = 0x0x00
+                  28 C6 = 0  SUM = 000000
+
+		  Test for carry:
+                  40 A = 000000  B = 000000  C0 = 1
+                  43 C6 = 0  SUM = 000001
+
+		  Test for (8 + 5 + 0):
+                  60 A = 001000  B = 000101  C0 = 0
+                  68 C6 = 0  SUM = 001101
+
+		  Test for (8 + 5 + 1):
+                  80 A = 001000  B = 000101  C0 = 1
+                  83 C6 = 0  SUM = 001100
+                  85 C6 = 0  SUM = 001110
+
+		  Test for (28 + 11 + 0):
+                 100 A = 011100  B = 001011  C0 = 0
+                 103 C6 = 0  SUM = 001111
+                 107 C6 = 0  SUM = 101111
+                 108 C6 = 0  SUM = 100111
+
+		  Test for (28 + 11 + 1):
+                 120 A = 011100  B = 001011  C0 = 1
+                 123 C6 = 0  SUM = 100110
+                 125 C6 = 0  SUM = 100100
+                 127 C6 = 0  SUM = 101000
+
+		  Test for (57 + 26 + 0):
+                 140 A = 111001  B = 011010  C0 = 0
+                 143 C6 = 0  SUM = 101001
+                 144 C6 = 1  SUM = 101001
+                 145 C6 = 1  SUM = 101011
+                 147 C6 = 1  SUM = 100011
+                 148 C6 = 1  SUM = 010011
+
+		  Test for (57 + 26 + 1):
+                 160 A = 111001  B = 011010  C0 = 1
+                 163 C6 = 1  SUM = 010010
+                 165 C6 = 1  SUM = 010000
+                 167 C6 = 1  SUM = 010100
+
+$finish called from file "tb_6bit.v", line 76.
+$finish at simulation time                  175
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 175 ns
+CPU Time:      0.240 seconds;       Data structure size:   0.0Mb
+Thu Apr  4 17:20:14 2019

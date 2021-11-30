@@ -1,0 +1,1 @@
+vcs -debug -full64 JK_FF.v tb_JK_FF.v

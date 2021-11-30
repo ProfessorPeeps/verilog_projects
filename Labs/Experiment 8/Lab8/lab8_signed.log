@@ -1,0 +1,93 @@
+Chronologic VCS simulator copyright 1991-2017
+Contains Synopsys proprietary information.
+Compiler version N-2017.12-SP2-2_Full64; Runtime version N-2017.12-SP2-2_Full64;  Apr 11 13:52 2019
+VCD+ Writer N-2017.12-SP2-2_Full64 Copyright (c) 1991-2017 by Synopsys Inc.
+
+                   0 ALU_OUT = xxxxxxxx  CF = x  OF = x  SF = x  ZF = x
+
+		   Test for undefined operand:
+                   5 A = 11111111  B = 11111111 OPCODE = 0000  OE = 1
+
+		  Test for ADD where MSBs are zero to set OF, SF:
+                  15 A = 01110000  B = 00010000 OPCODE = 0010
+                  15 ALU_OUT = 10000000  CF = 0  OF = 1  SF = 1  ZF = 0
+
+		  Test for ADD where no flags set:
+                  25 A = 00001000  B = 00011111 OPCODE = 0010
+                  25 ALU_OUT = 00100111  CF = 0  OF = 0  SF = 0  ZF = 0
+
+		  Test for ADD where MSBs are one to set CF, OF:
+                  35 A = 10110000  B = 10010000 OPCODE = 0010
+                  35 ALU_OUT = 01000000  CF = 1  OF = 1  SF = 0  ZF = 0
+
+		  Test for ADD with alternating MSBs to set CF, ZF:
+                  45 A = 10110000  B = 01010000 OPCODE = 0010
+                  45 ALU_OUT = 00000000  CF = 1  OF = 0  SF = 0  ZF = 1
+
+
+		  Test for undefined operand:
+                  55 A = 11111111  B = 11111111 OPCODE = 0001
+
+		  Test for SUB where MSBs are zero to set OF:
+                  65 A = 10000000  B = 10000000 OPCODE = 0011
+                  65 ALU_OUT = 00000000  CF = 0  OF = 1  SF = 0  ZF = 1
+
+		  Test for SUB where no flags set:
+                  75 A = 00011000  B = 00001000 OPCODE = 0010
+                  75 ALU_OUT = 00100000  CF = 0  OF = 0  SF = 0  ZF = 0
+
+		  Test for SUB where MSBs are one to set OF:
+                  85 A = 10110000  B = 10010000 OPCODE = 0011
+                  85 ALU_OUT = 00100000  CF = 0  OF = 1  SF = 0  ZF = 0
+
+		  Test for SUB with A < B to set CF:
+                  95 A = 00110000  B = 11010000 OPCODE = 0011
+                  95 ALU_OUT = 01100000  CF = 0  OF = 0  SF = 0  ZF = 0
+
+
+		 Test for AND where ZF not set:
+                 105 A = 10110110  B = 11110000 OPCODE = 0100
+                 105 ALU_OUT = 10110000  CF = 0  OF = 0  SF = 1  ZF = 0
+
+		 Test for AND where ZF set:
+                 115 A = 10110110  B = 00000000 OPCODE = 0100
+                 115 ALU_OUT = 00000000  CF = 0  OF = 0  SF = 0  ZF = 1
+
+
+		 Test for OR where ZF not set:
+                 125 A = 10110110  B = 11110000 OPCODE = 0101
+                 125 ALU_OUT = 11110110  CF = 0  OF = 0  SF = 1  ZF = 0
+
+		 Test for OR where ZF set:
+                 135 A = 00000000  B = 00000000 OPCODE = 0101
+                 135 ALU_OUT = 00000000  CF = 0  OF = 0  SF = 0  ZF = 1
+
+
+		 Test for XOR where ZF not set:
+                 145 A = 10110110  B = 11110000 OPCODE = 0110
+                 145 ALU_OUT = 01000110  CF = 0  OF = 0  SF = 0  ZF = 0
+
+		 Test for XOR where ZF set:
+                 155 A = 11111111  B = 11111111 OPCODE = 0110
+                 155 ALU_OUT = 00000000  CF = 0  OF = 0  SF = 0  ZF = 1
+
+		 Test for when OE is disabled (flags are not changed):
+                 165 A = 00010101  B = 01010101 OPCODE = 0111
+                 165 ALU_OUT = zzzzzzzz  CF = 0  OF = 0  SF = 0  ZF = 1
+
+		 Test for NOT where ZF set:
+                 175 A = 11111111  B = xxxxxxxx OPCODE = 0111  OE = 1
+                 175 ALU_OUT = 00000000  CF = 0  OF = 0  SF = 0  ZF = 1
+
+		 Test for when ENA is low:
+                 185 A = 11110000  B = xxxxxxxx OPCODE = 0111
+
+		 Test for undefined operand:
+                 195 A = 11111111  B = 11111111 OPCODE = 1000
+
+$finish called from file "tb_alu.sv", line 153.
+$finish at simulation time                 2100
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 210000 ps
+CPU Time:      0.240 seconds;       Data structure size:   0.0Mb
+Thu Apr 11 13:52:09 2019

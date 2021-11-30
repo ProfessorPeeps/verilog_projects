@@ -1,0 +1,15 @@
+Chronologic VCS simulator copyright 1991-2017
+Contains Synopsys proprietary information.
+Compiler version N-2017.12-SP2-2_Full64; Runtime version N-2017.12-SP2-2_Full64;  Mar 14 17:35 2019
+VCD+ Writer N-2017.12-SP2-2_Full64 Copyright (c) 1991-2017 by Synopsys Inc.
+                   0 out = x a = 0 b = 1 sel = x
+                  10 out = x a = 1 b = 1 sel = x
+                  30 out = 0 a = 0 b = 1 sel = 0
+                  50 out = 1 a = 0 b = 1 sel = 1
+                  60 out = 1 a = 1 b = 1 sel = 0
+$finish called from file "tb_MUX2_1.v", line 33.
+$finish at simulation time                   80
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 80 ns
+CPU Time:      0.230 seconds;       Data structure size:   0.0Mb
+Thu Mar 14 17:35:34 2019

@@ -1,0 +1,63 @@
+Chronologic VCS simulator copyright 1991-2017
+Contains Synopsys proprietary information.
+Compiler version N-2017.12-SP2-2_Full64; Runtime version N-2017.12-SP2-2_Full64;  Mar 28 18:29 2019
+VCD+ Writer N-2017.12-SP2-2_Full64 Copyright (c) 1991-2017 by Synopsys Inc.
+
+                   0 C_OUT = xx  SUM = xx
+
+		  Test for default: 
+                  20 A = 00  B = 00  C_IN = 0
+                  24 C_OUT = 00  SUM = xx
+                  27 C_OUT = 00  SUM = 0x
+                  28 C_OUT = 00  SUM = 00
+
+		  Test for carry:
+                  40 A = 00  B = 00  C_IN = 1
+                  43 C_OUT = 00  SUM = 01
+
+		  Test for (1+0+0):
+                  60 A = 01  B = 00  C_IN = 0
+                  63 C_OUT = 00  SUM = 00
+                  68 C_OUT = 00  SUM = 01
+
+		 Test for (0+1+1):
+                  80 A = 00  B = 01  C_IN = 1
+                  83 C_OUT = 00  SUM = 10
+
+		 Test for (1+1+0):
+                 100 A = 01  B = 01  C_IN = 0
+                 103 C_OUT = 00  SUM = 01
+                 107 C_OUT = 00  SUM = 11
+                 108 C_OUT = 00  SUM = 10
+
+		 Test for (1+1+1):
+                 120 A = 01  B = 01  C_IN = 1
+                 123 C_OUT = 00  SUM = 11
+
+		 Test for (1+2+0):
+                 140 A = 01  B = 10  C_IN = 0
+                 142 C_OUT = 11  SUM = 11
+                 143 C_OUT = 11  SUM = 10
+                 144 C_OUT = 10  SUM = 10
+                 148 C_OUT = 10  SUM = 11
+
+		 Test for (2+1+1):
+                 160 A = 10  B = 01  C_IN = 1
+                 163 C_OUT = 10  SUM = 00
+
+		 Test for (3+3+0):
+                 180 A = 11  B = 11  C_IN = 0
+                 182 C_OUT = 11  SUM = 00
+                 183 C_OUT = 11  SUM = 11
+                 188 C_OUT = 11  SUM = 10
+
+		 Test for (3+3+1):
+                 200 A = 11  B = 11  C_IN = 1
+                 203 C_OUT = 11  SUM = 11
+
+$finish called from file "tb_2bit.v", line 77.
+$finish at simulation time                  210
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 210 ns
+CPU Time:      0.210 seconds;       Data structure size:   0.0Mb
+Thu Mar 28 18:29:35 2019

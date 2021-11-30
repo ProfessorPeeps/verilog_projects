@@ -1,0 +1,41 @@
+Chronologic VCS simulator copyright 1991-2017
+Contains Synopsys proprietary information.
+Compiler version N-2017.12-SP2-2_Full64; Runtime version N-2017.12-SP2-2_Full64;  Mar 14 20:19 2019
+VCD+ Writer N-2017.12-SP2-2_Full64 Copyright (c) 1991-2017 by Synopsys Inc.
+
+                   0 C_OUT = x  SUM = x
+
+                   5 A = 0  B = 0  C_IN = 0
+                   7 C_OUT = 0  SUM = x
+                   8 C_OUT = 0  SUM = 0
+
+                  10 A = 0  B = 0  C_IN = 1
+                  13 C_OUT = 0  SUM = 1
+
+                  15 A = 0  B = 1  C_IN = 0
+                  15 C_OUT = 0  SUM = 1
+
+                  20 A = 0  B = 1  C_IN = 1
+                  22 C_OUT = 1  SUM = 1
+                  23 C_OUT = 1  SUM = 0
+
+                  25 A = 1  B = 0  C_IN = 0
+                  27 C_OUT = 0  SUM = 0
+                  28 C_OUT = 0  SUM = 1
+
+                  30 A = 1  B = 0  C_IN = 1
+                  32 C_OUT = 1  SUM = 1
+                  33 C_OUT = 1  SUM = 0
+
+                  35 A = 1  B = 1  C_IN = 0
+                  35 C_OUT = 1  SUM = 0
+
+                  40 A = 1  B = 1  C_IN = 1
+                  43 C_OUT = 1  SUM = 1
+
+$finish called from file "tb_FA.v", line 56.
+$finish at simulation time                   55
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 55 ns
+CPU Time:      0.240 seconds;       Data structure size:   0.0Mb
+Thu Mar 14 20:19:39 2019

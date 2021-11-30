@@ -1,0 +1,1 @@
+vcs -full64 -debug SR_Latch.v tb_SR.v

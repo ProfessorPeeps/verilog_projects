@@ -1,0 +1,1 @@
+vcs -debug -full64 scale_mux.v tb_scale_mux.v

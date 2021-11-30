@@ -1,0 +1,1 @@
+vcs -sverilog -debug -full64 alu.sv tb_alu.sv

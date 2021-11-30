@@ -1,0 +1,1 @@
+vcs -debug -full64 D_FF.v SR_Latch.v MUX2_1.v register.v tb_register.v

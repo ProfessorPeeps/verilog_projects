@@ -1,0 +1,26 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "tb_rom": [
+        "tb_rom",
+        "uJyMt",
+        "module",
+        5
+    ],
+    "tb_register": [
+        "tb_register",
+        "kqAD8",
+        "module",
+        3
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        4
+    ]
+}

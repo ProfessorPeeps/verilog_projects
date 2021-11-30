@@ -1,0 +1,53 @@
+Chronologic VCS simulator copyright 1991-2017
+Contains Synopsys proprietary information.
+Compiler version N-2017.12-SP2-2_Full64; Runtime version N-2017.12-SP2-2_Full64;  Mar  7 13:15 2019
+VCD+ Writer N-2017.12-SP2-2_Full64 Copyright (c) 1991-2017 by Synopsys Inc.
+
+Reset counter to default: 
+                   0  COUNT = xxxxx
+                   5 ENA = 0  DATA = 01111 RST = 0  CLK = 0
+
+Disable reset, enable counter, and load data: 
+                   5  COUNT = 00000
+                  10  ENA = 1  DATA = 00001 RST = 1  CLK = 1
+
+Disable load to increment until counter equals 5: 
+                  10 ENA = 1  DATA = 00001 RST = 1  CLK = 1
+                  50  COUNT = 00001
+                  70  COUNT = 00010
+                  90  COUNT = 00011
+                 110  COUNT = 00100
+                 130  COUNT = 00101
+
+Enable parallel loading of value 28 and count: 
+                 145  ENA = 1  DATA = 00001 RST = 1  CLK = 0
+                 150  COUNT = 11100
+                 170  COUNT = 11101
+                 190  COUNT = 11110
+                 210  COUNT = 11111
+                 230  COUNT = 00000
+                 250  COUNT = 00001
+                 270  COUNT = 00010
+                 290  COUNT = 00011
+                 310  COUNT = 00100
+                 330  COUNT = 00101
+
+Show that reset overrides load: 
+                 340  ENA = 1  DATA = 01111 RST = 0  CLK = 0
+                 340  COUNT = 00000
+
+Show that reset overrides count: 
+                 365  ENA = 1  DATA = 01111 RST = 0  CLK = 0
+                 375  COUNT = 00000
+
+Show that enable low does not load or count: 
+                 380  ENA = 0  DATA = 10101 RST = 1  CLK = 0
+                 380  COUNT = 00000
+                 385  ENA = 0  DATA = 10101 RST = 1  CLK = 0
+                 385  COUNT = 00000
+$finish called from file "tb_counter.sv", line 73.
+$finish at simulation time                  390
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 390 ns
+CPU Time:      0.230 seconds;       Data structure size:   0.0Mb
+Thu Mar  7 13:15:46 2019
